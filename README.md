@@ -5,5 +5,5 @@
 - [Open Source Tools](/Tools/)
 - [Continous Integration](/CI/)
 - [Continous Deployment](/CD/)
-- [Miscellaneous](/Miscellaneous/)
+- [Miscellaneous](/Server/)
 
