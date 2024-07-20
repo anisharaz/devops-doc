@@ -39,7 +39,7 @@ The generalized and universal server block looks like this, Just edit the fields
 ```yaml
 server {
     listen 80;
-    server_name youtube.google.com;
+    server_name {domain.name};
     location / {
         add_header X-Served-By $host;
         proxy_set_header Host $host;
