@@ -6,7 +6,12 @@ https://ntfy.sh/
  - Get status of your server as a daily notification.<br><br>
  ![Ntfy Eg.](../assets/stats.jpeg)
  - Get you recurring activity status.<br><br>
- ![Ntfy Eg.](../assets/ntfy.jpeg)
+ ![Ntfy Eg.](../assets/ntfy.jpeg)<br><br>
+ ### Docker Deployment
+change the network name and ip address as per your network.
+```bash
+sudo docker run -d --name ntfy --network deploy --ip 11.0.0.2 binwiederhier/ntfy
+```
 
 # UptimeKuma
 It is a self-hosted monitoring tool that provides a simple interface to monitor your services.It can notify you about your service status via.
@@ -18,3 +23,9 @@ It is a self-hosted monitoring tool that provides a simple interface to monitor 
 <br><br>
 ![Ntfy Eg.](../assets/uptimekuma.png)
 
+ ### Docker Deployment
+change the network name and ip address as per your network.
+```bash
+docker volume create uptime-kuma
+docker run -d -v uptime-kuma:/app/data --name uptime-kuma --network deploy --ip 11.0.0.2 louislam/uptime-kuma
+```

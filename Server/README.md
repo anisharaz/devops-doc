@@ -16,7 +16,7 @@ sudo pacman -S nginx
 sudo apk add nginx
 ```
 
-## Configuration
+## Configuring as Reverse Proxy
 > config file location: `/etc/nginx/nginx.conf` <br>
 you can add a line to the config file inside http block(if it doesn't exist) to include the config file. <br>
 ```
@@ -32,9 +32,9 @@ you can name you config files for each service for Eg. <br>
 `youtube.nginx.conf` for youtube service. <br>
 `github.nginx.conf` for github service.
 
-Inside these files add a server block for each service. <br>
-## The generalized and universal server block inside http block of nginx config, Just edit the fields inside {__}
+Inside these files add a server block for each service. <br> For Eg. Your app container is running on ip address 11.0.0.3:8000 and you want to serve it on `app.example.com` then replace the {domain.name} with app.example.com, {internal_IP} as 11.0.0.3 and {PORT} as 8000.
 
+## The generalized and universal server block inside http block of nginx config, Just edit the fields inside {__}
 
 ```yaml
 server {
@@ -70,4 +70,5 @@ restart the nginx service after adding the config files.
 sudo nginx -s reload
 ```
 
+### After these steps you can simply point your domain to you server public IP address and it will be served by nginx.
 
