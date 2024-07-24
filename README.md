@@ -7,3 +7,5 @@
 - [Continous Integration](/CI/)
 - [Continous Deployment](/CD/)
 
+> [!IMPORTANT]
+> Deployment of apps in the repo are done using docker containers. So, make sure you have docker installed and configured. Go through the [Docker](/Docker/) section for more details.
