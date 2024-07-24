@@ -33,7 +33,7 @@ you can name you config files for each service for Eg. <br>
 `github.nginx.conf` for github service.
 
 Inside these files add a server block for each service. <br>
-The generalized and universal server block looks like this, Just edit the fields inside {__}
+## The generalized and universal server block inside http block of nginx config, Just edit the fields inside {__}
 
 
 ```yaml
