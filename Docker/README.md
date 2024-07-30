@@ -84,7 +84,7 @@ services:
 
 networks:
   internal-network:
-    name: deploy    //name of the existing network
+    name: deploy 
     external: true
 ```
 In the above example, the services `web` and `db` are attached to the network `deploy`. The network `deploy` is an existing network. If the network `deploy` does not exist then docker compose will not run.
