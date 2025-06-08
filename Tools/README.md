@@ -29,3 +29,8 @@ change the network name and ip address as per your network.
 docker volume create uptime-kuma
 docker run -d -v uptime-kuma:/app/data --name uptime-kuma --network deploy --ip 11.0.0.2 louislam/uptime-kuma
 ```
+
+# Metabase 
+It is a self-hosted business intelligence tool that provides a simple interface to visualize your data and create dashboards. It can connect to various databases and provide insights into your data.
+<br><br>
+[Metabase](https://www.metabase.com/) 
